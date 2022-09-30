@@ -1,0 +1,49 @@
+body {
+  background-color: lightblue;
+  display: flex;
+}
+
+/* .renderButton{
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px 32px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.renderButton button:hover {
+  background-color: #3e8e41;
+} */
+
+model-viewer {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin: auto;
+  width: 50%;
+  height: 600px;
+}
+
+.ModelSelector button {
+  background-color: #04AA6D; /* Green background */
+  text-align: center;
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 8px 130px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 22%; /* Set a width if needed */
+  display: flex; /* Make the buttons appear below each other */
+}
+
+.ModelSelector button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.ModelSelector button:hover {
+  background-color: #3e8e41;
+}

@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
-<body>
-    <div class="ModelSelector">
+
+<header class="Header">
+    <h1>Bloemenpot's Minetopia Renderer</h1>
+</header>
+
+<section class="Main">
+    <aside class="AsideLeft">
         <button>Vortex</button>
         <button>Canary</button>
         <button>Bollar</button>
         <button>Master</button>
         <button>Range</button>
+        <button>Bucket</button>
+        <button>Mirage</button>
+        <button>Stallion</button>
+        <button>Tesla</button>
         <button>Hercal</button>
         <button>Mustang</button>
         <button>Corvette</button>
@@ -23,9 +32,23 @@
         <button>Fiets</button>
         <button>Hovercraft</button>
         <button>Waterscooter</button>
+    </aside>
+    
+    <section class="MainModelViewer">
+        
+        <model-viewer alt="Rendered model" shadow-intensity="1" shadow-softness="0" poster="imgs/Loading.png" src="Models/MainModels/F1/f1_body_test.gltf" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+    </section>
 
-    </div>
-    <!-- <button class="renderButton">Render Model</button> -->
-    <model-viewer alt="Rendered model" shadow-intensity="1" shadow-softness="0" poster="imgs/Loading.png" src="testModels/canary_final.gltf" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-</body>
+    <aside class="AsideRight">
+        <!-- <label for="f1_tires">f1_tires</label> -->
+        <button>master_frontlights_sportief_normal</button>
+        <button>f1_tires_gray</button>
+    </aside>
+</section>
+
+
+
+<footer class="Footer">
+
+</footer>
 </html>

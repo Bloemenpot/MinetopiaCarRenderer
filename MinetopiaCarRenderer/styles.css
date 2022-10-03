@@ -1,31 +1,105 @@
-body {
-  background-color: lightblue;
-  display: flex;
+.Header {
+  font-family: Minecraft;
+  font-weight: bold;
+  src: url("fonts/MinecraftBold-nMK1.otf") format("opentype");
+  color: #04AA6D;
+
+  text-align: center;
 }
 
-/* .renderButton{
-  background-color: #04AA6D;
-  color: white;
-  padding: 8px 32px;
-  margin: auto;
+.Main {
   display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
-.renderButton button:hover {
-  background-color: #3e8e41;
-} */
 
-model-viewer {
+.AsideLeft {
+  
+}
+
+.AsideLeft button {
+  font-family: Minecraft;
+  src: url("fonts/MinecraftRegular-Bmg3.otf") format("opentype");
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 350px;
+  display: block;
+}
+
+.AsideLeft button:hover {
+  background-color: #3e8e41;
+}
+
+.AsideRight {
+  
+}
+
+.AsideRight button {
+  font-family: Minecraft;
+  src: url("fonts/MinecraftRegular-Bmg3.otf") format("opentype");
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  /* padding: 15px 32px; */
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 350px;
+  display: block;
+}
+
+.AsideRight button:hover {
+  background-color: #3e8e41;
+}
+
+.MainModelViewer {
+  height: 400%;
+}
+
+.MainModelViewer model-viewer {
   border-style: solid;
   border-width: 2px;
   border-color: black;
   border-radius: 20px;
-  margin-top: 50px;
-  margin: auto;
+  margin-right: 100px;
+  margin-left: 200px;
+  width: 900px;
+  height: 600px;
+}
+
+.Footer {
+
+}
+
+
+
+
+
+
+
+
+/* model-viewer {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 20px;
+  margin-right: 100px;
+  margin-left: 200px;
   width: 50%;
   height: 600px;
+} */
+
+.ModelSelector {
+  text-align: center;
+  display:table-cell;
+  vertical-align:middle;
 }
 
 .ModelSelector button {
@@ -33,9 +107,7 @@ model-viewer {
   text-align: center;
   border: 1px solid green; /* Green border */
   color: white; /* White text */
-  padding: 8px 130px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
-  width: 22%; /* Set a width if needed */
   display: flex; /* Make the buttons appear below each other */
 }
 
@@ -45,5 +117,24 @@ model-viewer {
 
 /* Add a background color on hover */
 .ModelSelector button:hover {
+  background-color: #3e8e41;
+}
+
+.PartsSelector button {
+  background-color: #04AA6D; /* Green background */
+  text-align: center;
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: inline-block; /* Make the buttons appear below each other */
+}
+
+.PartsSelector button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.PartsSelector button:hover {
   background-color: #3e8e41;
 }
